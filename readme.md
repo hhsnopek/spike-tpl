@@ -1,28 +1,40 @@
-# Spike - Base Template
+# Spike Tpl
+> Based off of [static-dev/spike-tpl-base], removes sugar and adds flexibility
 
-[![tests](http://img.shields.io/travis/static-dev/spike-tpl-base/master.svg?style=flat)](https://travis-ci.org/spike-tpl-base/spike-tpl-base) [![dependencies](http://david-dm.org/static-dev/spike-tpl-base.svg?path=root)](https://david-dm.org/static-dev/spike-tpl-base?path=root)
+## TODO
+- add netlify setup
+- add travis setup
 
-The base template for the latest [spike](https://github.com/static-dev/spike) version. The features in this template are designed by the [carrot](https://github.com/carrot) tech team.
+## features
+- creates Github repository and disables wiki
+- modifies Github repository labels
+- uses your `.gitconfig` user.name for contactName
+- uses your `.gitconfig` user.email for contactEmail
+- uses `npm whoami` for githubUsername
 
-## Installation
+## installation
+### dependencies
+- [ash-shell/ash]
+- [carrot/ash-github]
 
-### With Spike
+### using Spike
+- `spike tpl add flex git@github.com:hhsnopek/spike-tpl.git`
+- `spike new flex <projectName>`
 
-This is the default template for use within [spike](https://github.com/static-dev/spike) when running `spike new` without a template option.
-
-- `npm i spike -g`
-- `spike new <projectname>`
-
-### Standalone
-
-[Spike](https://github.com/static-dev/spike) uses [sprout](https://github.com/carrot/sprout) internally to generate it's project templates. This means you can even use this template without [spike](https://github.com/static-dev/spike) by using [sprout](https://github.com/carrot/sprout) directly.
-
-- `npm i sprout-cli -g`
-- `sprout add spike-tpl-base git@github.com:static-dev/spike-tpl-base.git`
-- `sprout new spike-tpl-base <myproject>`
+### using Sprout
+- `sprout add flex git@github.com:hhsnopek/spike-tpl.git`
+- `sprout new flex <projectName>`
 
 ## Options
-
-- **name** (name of template)
+- **name** (name of template):te
 - **description** (a short description of the template)
-- **github_username** (name of github user)
+- **contactName** (your name)
+- **contactEmail** (your email)
+- **githubUsername** (your github username)
+- **org** (organization on Github) *Optional
+  - **orgName** - (name of Github org)
+- **lConfig** - (Github label config, see [carrot/ash-github])
+
+[static-dev/spike-tpl-base]: //github.com/static-dev/spike-tpl-base
+[ash-shell/ash]: //github.com/ash-shell/ash
+[carrot/ash-github]: //github.com/carrot/ash-github
