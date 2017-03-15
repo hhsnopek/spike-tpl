@@ -1,4 +1,6 @@
 # Spike Tpl
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/hhsnopek/spike-tpl.svg)](https://greenkeeper.io/)
 > Based off of [static-dev/spike-tpl-base], removes sugar and adds flexibility
 
 ## TODO
